@@ -42,4 +42,4 @@ jobs:
           setup: |
             bundle install
             ${{ matrix.setup }}
-          use-ruby-linker-for-cargo: ${{ matrix.platform == 'arm64-darwin' }}
+          use-ruby-linker-for-cargo: ${{ matrix.platform == 'aarch64-linux' }}
