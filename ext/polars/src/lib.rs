@@ -39,9 +39,9 @@ use mimalloc::MiMalloc;
 #[cfg(target_os = "linux")]
 static GLOBAL: Jemalloc = Jemalloc;
 
-// #[global_allocator]
-// #[cfg(not(target_os = "linux"))]
-// static GLOBAL: MiMalloc = MiMalloc;
+#[global_allocator]
+#[cfg(not(target_os = "linux"))]
+static GLOBAL: MiMalloc = MiMalloc;
 
 type RbResult<T> = Result<T, Error>;
 
