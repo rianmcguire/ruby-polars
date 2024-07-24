@@ -21,6 +21,10 @@ polars-utils = "=0.36.2"
 serde_json = "1"
 smartstring = "1"
 
+[dependencies.rb-sys]
+version = "0.9.98"
+features = ["stable-api-compiled-fallback"]
+
 [dependencies.polars]
 version = "=0.36.2"
 features = [
